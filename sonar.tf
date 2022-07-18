@@ -2,7 +2,7 @@ resource "aws_instance" "mySonarInstance" {
       ami           = "ami-06640050dc3f556bb"
 
       key_name = var.key_name
-      instance_type = "t2.small"
+      instance_type = "t2.micro"
       security_groups= [ "security_sonar_group_2022"]
       tags= {
         Name = "sonar_instance"
